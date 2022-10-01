@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Project Collab</title>
+</head>
+<body>
+    <nav class="collab__container">
+        <div class="collab__nav">
+        <div class="logo-container"><a href="/index.html"><img src="/links/main-icons/nav-logo.svg" class = "logo" alt="logo"></a></div>
+        <div class="collab__exit-menu" >
+            <a href="/index.html" class = "collab__exit-btn"><img src="/links/main-icons/exitBtn.svg"></a>
+        </div>
+    </div>
+    </nav>
+    <header class="collab__content-section">
+        <div class="collab__content-container">
+            <h2 class="collab__content-main_phrase">Project Collab</h2>
+            <p class="collab__content-sub_phrase">I’m excited to learn about the idea behind your project. Ready to get started?</p>
+        </div>
+    </header>
+    <section class="hello__form-section">
+        <div class="hello__form-container">
+            <div class="hello__form-row">
+                <div class="collab__form-column_name">
+                    <label for="column_name" class = "label_name">Name</label>
+                    <input type="text" name="column_name" id="column_name" required>
+                </div>
+                <div class="collab__form-column_email">
+                    <label for="column_email" class = "label_email">Email</label>
+                    <input type="text" name="column_email" id="column_email" required>
+                </div>
+            </div>
+
+            <div class="collab__form-row">
+                <div class="collab__form-column_type-project">
+                    <label for="column_type-project" class = "type-project">Type of Project</label>
+                    <select name="column_type-project" id="column_type-project" required>
+                        <option class = "project-main-option" value = "0" disabled selected hidden></option>
+                        <option class = "project-option">UI Design</option>
+                        <option class = "project-option">Landing Page</option>
+                        <option class = "project-option">Web App</option>
+                    </select>
+                </div>
+                <div class="collab__form-column_budget">
+                    <label for="column_budget" class = "label_budget">Budget</label>
+                    <input type="text" name="column_budget" id="column_budget" required>
+                </div>
+            </div>
+
+            <div class="hello__form-message">
+                <label for="form-message" class = "label_message">Additional Details</label>
+                <textarea name="form-message" id="form-message" required></textarea>
+            </div>
+            <a href = "footerSubmit.html" class="hello__form-submit_btn">Submit<img src="/links/main-icons/helloIcon.svg" class = "hello-icon" alt="hello-icon"></a>
+        </div>
+    </section>
+</body>
+</html>
